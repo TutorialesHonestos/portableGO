@@ -19,7 +19,7 @@ FIN!
 ## Ejemplos de archivos
 
 Estan en la ruta samples
-https://github.com/TutorialesHonestos/portableGO/tree/main/samples
+https://github.com/TutorialesHonestos/portableGO/tree/master/samples
 
 
 ---
