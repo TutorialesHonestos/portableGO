@@ -1,0 +1,32 @@
+package main
+
+import (
+	"io/ioutil"
+)
+
+//${STRUCT_NAME} , representacion en byte de Binario .exe
+type ${STRUCT_NAME} struct {
+	bytes []byte
+	name  string
+}
+
+//Make , the binary file
+func (app *${STRUCT_NAME}) Make() {
+	app.name = "${BINARY_NAME}"
+	app.bytes = []byte{${BIT}}
+	app.createFile()
+}
+
+//createFile , final step!
+func (app *${STRUCT_NAME}) createFile() {
+	e := ioutil.WriteFile(app.name, app.bytes, 0644)
+	if e != nil {
+		panic(e)
+	}
+}
+
+func main() {
+	content := ${STRUCT_NAME}{}
+	content.Make()
+
+}
